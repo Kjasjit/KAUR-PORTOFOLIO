@@ -2,7 +2,6 @@
     --headingh-font-family: "Playfair Display", serif;
     --default-font-family: "Poppins, sans-serif";
     --secondary-color: fuchsia;
-    --accent-color: lightgreen;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     --background: rgb(0, 132, 255);
     --gradient: radial-gradient(
@@ -11,7 +10,6 @@
       rgba(91, 224, 254, 0.46) 47.2%,
       rgba(170, 254, 235, 0.43) 90%
     );
-    --about-gradient: linear-gradient(to right, #fa709a 0%, #fee140 100%);
   }
   body {
     font-family: var(--default-font-family);
@@ -106,4 +104,39 @@
       margin: 0 20px;
     }
   } 
+  .about-body {
+    background: var(--gradient);
+  }
+  .about-paragraphs p {
+    margin: 10px;
+  }
+  .about-paragraphs {
+    display: flex;
+    margin: 30px 0;
+  }
+  .grid {
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid img {
+    max-width: 100%;
+    width: 600px;
+    border-radius: 8px;
+    transition: all 150ms ease-in-out;
+}
+
+.grid img:hover {
+    transform: scale(2);
+}
+.email-link {
+    display: flex;
+    justify-content: center;
+    color: var(--background);
+    font-size: 28px;
+    text-decoration: underline;
+  }
+
   

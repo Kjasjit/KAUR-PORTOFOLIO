@@ -103,6 +103,9 @@
       text-align: center;
       margin: 0 20px;
     }
+    .about-section{
+      padding: 0;
+    }
   } 
   .about-body {
     background: var(--gradient);

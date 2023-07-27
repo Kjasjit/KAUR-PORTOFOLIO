@@ -1,6 +1,7 @@
 :root {
     --headingh-font-family: "Playfair Display", serif;
     --default-font-family: "Poppins, sans-serif";
+    --branding-color: rgb(243, 243, 139);
     --secondary-color: fuchsia;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     --background: rgb(0, 132, 255);
@@ -13,12 +14,13 @@
   }
   body {
     font-family: var(--default-font-family);
-    margin: 100px 0;
+    margin: 0px 0;
   }
   
   h1,
   h2,
   h3 {
+    color: black;
     font-family: var(--headingh-font-family);
     font-weight: bold;
     margin: 0;
@@ -30,34 +32,32 @@
   }
   
   h2 {
-    font-size: 48px;
-    text-align: center;
+    font-size: 64px;
   }
   
   h3 {
-    font-size: 24px;
-    opacity: 0.7;
+    font-size: 48px;
   }
   
   p {
     background: var(--gradient);
     color: var(--background);
-    padding: 20px;
+    padding:20px;
     border-radius: 4px;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     line-height: 30px;
   }
   .hero {
     background: var(--gradient);
-    padding: 160px 20px;
+    padding: 80px 20px;
   }
   .clicked-links {
     display: flex;
     margin-top: 40px;
     justify-content: center;
-    font-size: 24px;
+    font-size: 30px;
     text-decoration: underline;
   }
   
@@ -67,6 +67,9 @@
     padding: 20px 15px;
     text-decoration: none;
     text-transform: capitalize;
+  }
+  a{
+    color: black;
   }
   a:hover {
     color: fuchsia;
@@ -80,15 +83,121 @@
     box-shadow: var(--box-shadow);
     color: var(--background);
   }
+  
+  .btn-branding{
+    background: var(--branding-color);
+    border-radius: 4px;
+    color: fuchsia;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
+  }
+  
+  .content-container {
+    padding: 0;
+  }
+  
+  .content-container h1 {
+    font-size: 64px;
+    line-height: 80px;
+  }
+  
+  .content-container h2 {
+    font-size: 18px;
+    font-family: var(--default-font-family);
+  }
+  .content h3 {
+    font-size: 24px;
+    line-height: 1.5;
+  
+    font-family: var(--default-font-family);
+  }
+  
+  .content p {
+    font-size: 14px;
+  }
+  
+  .content {
+    margin: 30px;
+  }
+  nav {
+    padding: 20px 0;
+  }
+  
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline;
+    list-style: none;
+    line-height: 42px;
+    margin-left: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #272142;
+    transition: all 100ms ease-in-out;
+  }
+  
+  nav a:hover,
+  nav li.active a {
+    color: fuchsia;
+  }
+  footer {
+    margin: 60px 0;
+  }
+  
+  footer .contact-box {
+    background: var(--gradient);
+    padding: 30px 120px;
+    border-radius: 10px;
+    margin: 30px;
+  }
+  
+  footer .contact-box p {
+    margin: 0;
+    }
+  
+  footer .email-link {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+  }
+  
+  footer .email-link:hover {
+    color: var(--secondary-color);
+  }
+  
+  footer .social-links a {
+    margin: 0 20px;
+    color: var(--secondary-color);
+    background: var(--branding-color);
+    padding: 10px 14px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 100ms ease-in-out;
+  }
+  
+  footer .social-links a:hover {
+    color: black;
+    background: var(--branding-color);
+  }
   @media (max-width: 576px) {
     h1 {
       font-size: 48px;
       line-height: 1.5;
+      text-align: center;
     }
   
     h2 {
-      font-size: 32px;
+      font-size: 44px;
       text-align: center;
+    }
+    h3{
+      font-size: 26px;
     }
   
     p {
@@ -97,49 +206,17 @@
     .hero {
         padding: 80px 20px;
       }
+      .content{
+        text-align: center;
+        padding: 0;
+      }
   
     .project-link {
       display: block;
       text-align: center;
       margin: 0 20px;
     }
-    .about-section{
-      padding: 0;
-    }
+   
   } 
-  .about-body {
-    background: var(--gradient);
-  }
-  .about-paragraphs p {
-    margin: 10px;
-  }
-  .about-paragraphs {
-    display: flex;
-    margin: 30px 0;
-  }
-  .grid {
-    margin: 15px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
-}
-
-.grid img {
-    max-width: 100%;
-    width: 600px;
-    border-radius: 8px;
-    transition: all 150ms ease-in-out;
-}
-
-.grid img:hover {
-    transform: scale(2);
-}
-.email-link {
-    display: flex;
-    justify-content: center;
-    color: var(--background);
-    font-size: 28px;
-    text-decoration: underline;
-  }
 
   
